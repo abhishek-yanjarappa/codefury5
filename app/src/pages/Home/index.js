@@ -34,7 +34,7 @@ const HomePage = () => {
       unsubscribe();
     };
   }, []);
-  console.log(data);
+
   return (
     <IonPage>
       <IonHeader>

@@ -17,7 +17,7 @@ import { getDoc, doc } from "firebase/firestore";
 const IdeaPage = () => {
   const { id } = useParams();
   const [data, setData] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     setIsLoading(true);
     try {

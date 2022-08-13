@@ -34,7 +34,7 @@ const Create = () => {
     },
   });
 
-  if (!currentUser) {
+  if (!currentUser?.user?.uid) {
     return (
       <IonPage>
         <IonHeader>
@@ -43,7 +43,7 @@ const Create = () => {
           </IonToolbar>
         </IonHeader>
         <IonContent fullscreen>
-          <AuthPrompt />
+          <AuthPrompt text={"Signin to Create"} />
         </IonContent>
       </IonPage>
     );
@@ -66,7 +66,6 @@ const Create = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-        {!currentUser && <AuthPrompt text={"Signin to Create"} />}
         <div style={{ padding: "10px" }}>
           <h1>Write about your idea.</h1>
           <IonList>

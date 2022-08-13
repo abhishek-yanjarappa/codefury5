@@ -9,7 +9,10 @@ const config: CapacitorConfig = {
       FirebaseAuthentication: {
         skipNativeAuth: false,
         providers: ["google.com", "twitter.com"]
-      }
+      },
+      PushNotifications: {
+        presentationOptions: ["badge", "sound", "alert"],
+      },
   }
 };
 
